@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/home_fragment3">
+
+    <fragment
+        android:id="@+id/home_fragment3"
+        android:name="com.example.kotlin_practice2.fragments.Home_fragment"
+        android:label="fragment_home_fragment"
+        tools:layout="@layout/fragment_home_fragment" >
+        <action
+            android:id="@+id/action_home_fragment3_to_chooseReceiverFragment2"
+            app:destination="@id/chooseReceiverFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_fragment3_to_profile_fragment3"
+            app:destination="@id/profile_fragment3"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_home_fragment3_to_chat_fragment3"
+            app:destination="@id/chat_fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseReceiverFragment2"
+        android:name="com.example.kotlin_practice2.fragments.chooseReceiverFragment"
+        android:label="fragment_choose_receiver"
+        tools:layout="@layout/fragment_choose_receiver" >
+        <action
+            android:id="@+id/action_chooseReceiverFragment2_to_messanger_fragment3"
+            app:destination="@id/messanger_fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat_fragment3"
+        android:name="com.example.kotlin_practice2.fragments.Chat_fragment"
+        android:label="fragment_chat_fragment"
+        tools:layout="@layout/fragment_chat_fragment" />
+    <fragment
+        android:id="@+id/messanger_fragment3"
+        android:name="com.example.kotlin_practice2.fragments.messanger_fragment"
+        android:label="fragment_messanger -> {receiver_name}"
+        tools:layout="@layout/fragment_messanger_fragment" >
+        <argument
+            android:name="receiver_name"
+            app:argType="string" />
+        <argument
+            android:name="num"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_fragment3"
+        android:name="com.example.kotlin_practice2.fragments.Profile_fragment"
+        android:label="fragment_profile_fragment"
+        tools:layout="@layout/fragment_profile_fragment" />
+    <fragment
+        android:id="@+id/settingFragment2"
+        android:name="com.example.kotlin_practice2.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/notificationFragment2"
+        android:name="com.example.kotlin_practice2.fragments.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>

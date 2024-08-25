@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/view_transition"
+            android:id="@+id/btn_view_transition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -42,7 +42,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/view_balance"
+            android:id="@+id/btn_view_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -50,12 +50,12 @@
             android:text="View balance"
             android:textColor="@color/white"
             android:textSize="25dp"
-            app:layout_constraintBottom_toTopOf="@+id/view_transition"
-            app:layout_constraintEnd_toEndOf="@+id/view_transition"
-            app:layout_constraintStart_toStartOf="@+id/view_transition" />
+            app:layout_constraintBottom_toTopOf="@+id/btn_view_transition"
+            app:layout_constraintEnd_toEndOf="@+id/btn_view_transition"
+            app:layout_constraintStart_toStartOf="@+id/btn_view_transition" />
 
         <Button
-            android:id="@+id/send_money"
+            android:id="@+id/btn_send_money"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
@@ -63,9 +63,9 @@
             android:text="send_money"
             android:textColor="@color/white"
             android:textSize="25dp"
-            app:layout_constraintBottom_toTopOf="@+id/view_balance"
-            app:layout_constraintEnd_toEndOf="@+id/view_balance"
-            app:layout_constraintStart_toStartOf="@+id/view_balance" />
+            app:layout_constraintBottom_toTopOf="@+id/btn_view_balance"
+            app:layout_constraintEnd_toEndOf="@+id/btn_view_balance"
+            app:layout_constraintStart_toStartOf="@+id/btn_view_balance" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

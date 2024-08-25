@@ -34,8 +34,7 @@ class chooseReceiverFragment : Fragment() {
         )
         binding.btnNext.setOnClickListener {
             var receiverName = binding.edtReceiverName.text.toString()
-            val action = chooseReceiverFragmentDirections.
-            actionChooseReceiverFragmentToMessangerFragment2(receiverName,student,list)
+            val action  = chooseReceiverFragmentDirections.actionChooseReceiverFragment2ToMessangerFragment3(receiverName,100)
             findNavController().navigate(action)
         }
 

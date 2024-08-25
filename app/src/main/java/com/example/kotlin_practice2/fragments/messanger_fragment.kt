@@ -30,9 +30,9 @@ class messanger_fragment : Fragment() {
 
         val receiverName = "Cash send to "+args.receiverName
         binding.receivername.text = receiverName
-        Log.d("check_1","${args.student.name}")
+        /*Log.d("check_1","${args.student.name}")
         Log.d("check_2","${args.listOfStudent.contentToString()}")
-        Log.d("check_2","${args.listOfStudent.get(0).name}")
+        Log.d("check_2","${args.listOfStudent.get(0).name}")*/
 
         binding.btnCancel.setOnClickListener {
             val action = messanger_fragmentDirections.actionMessangerFragment2ToHomeFragment2()
